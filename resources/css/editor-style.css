@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "./custom.css";
+@import "./utilities.css";
+
+@source "../../*.php";
+@source "../../template-parts/**/*.php";
+@source "../../safelist.txt";
+
+@layer base {
+    .editor-styles-wrapper {
+        font-family: var(--font-sans);
+        color: var(--color-dark);
+    }
+}

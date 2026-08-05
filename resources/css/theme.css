@@ -1,0 +1,18 @@
+/* The portal theme switcher controls the `dark` class on the html element. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Playfair Display", ui-serif, Georgia, serif;
+
+    /* Keep Tailwind tokens aligned with the WordPress theme.json palette. */
+    --color-primary: var(--wp--preset--color--primary, #BA007C);
+    --color-secondary: var(--wp--preset--color--secondary, #D4AF37);
+    --color-dark: var(--wp--preset--color--dark, #101828);
+    --color-light: var(--wp--preset--color--light, #FFFFFF);
+    --color-muted: var(--wp--preset--color--muted, #4A5565);
+    --color-border: var(--wp--preset--color--border, #E5E7EB);
+    --color-slate: var(--wp--preset--color--slate, #6A7282);
+    --color-overlay-80: var(--wp--preset--color--overlay-80, #FFFFFFCC);
+    --color-overlay-0: var(--wp--preset--color--overlay-0, #FFFFFF00);
+}

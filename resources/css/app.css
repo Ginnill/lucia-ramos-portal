@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "./custom.css";
+@import "./utilities.css";
+
+/* WordPress templates are the source for Tailwind utility detection. */
+@source "../../*.php";
+@source "../../inc/**/*.php";
+@source "../../template-parts/**/*.php";
+@source "../../safelist.txt";
